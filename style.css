@@ -20,41 +20,127 @@ body{
     margin: 0;
 }
 
-.team-card-conatiner{
+.team-card-conatiner-1{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
-.team-card{
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    width: 300px;
-    margin: 20px;
+.team-card-conatiner-2{
+    display: flex;
+    margin-left: 1200px;
+    margin-top: 120px;
+}
+
+.team-card-1{
+    background: transparent;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 30px;
     padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px 1px rgb(114, 113, 111);
+    border: none;
+    border-radius: 20px;
+    box-shadow: -3px -3px 1px 1px rgb(114, 113, 111);
+
 }
 
-.team-card-title{
+.team-card-2{
+    background: transparent;
+    width: 100px;
+    margin-right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px 1px rgb(255, 255, 255);
+
+}
+
+.team-card-1:hover{
+    box-shadow: -3px -3px 3px 0px rgb(114, 113, 111);
+}
+
+.team-card-2:hover{
+    box-shadow: 3px 3px 3px 0px rgb(255, 255, 255);
+}
+
+.team-card-title-1{
+    font-size: 20px;
+    color: black;
     text-align: center;
 }
 
-.team-card-score{
+.team-card-title-2{
+    color: whitesmoke;
+    font-size: 20px;
     text-align: center;
-    font-size: 100px;
+}
+
+
+.team-card-score-1{
+    text-align: center;
+    font-size: 60px;
     margin: 0;
 }
+
+.team-card-score-2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
 
 .score-card-button-conatiner{
     display: flex;
     justify-content: space-around;
 }
 
-.score-card-button{
-    font-size: 30px;
-    background-color: white;
+.score-card-button-1{
+    font-size: 10px;
+    background-color: transparent;
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0px 0px 5px black ;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10) ;
     cursor: pointer;
+}
+
+.score-card-button-2{
+    font-size: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px white ;
+    cursor: pointer;
+}
+
+.score-card-button-1:hover{
+    box-shadow: 0px 0px 5px rgb(36, 32, 32) ;
+    background-color: antiquewhite;
+}
+
+.score-card-button-2:hover{
+    box-shadow: 0px 0px 5px rgb(36, 32, 32) ;
+    background-color: antiquewhite;
+}
+
+.btn-reset-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-reset{
+    margin-top: 0;
+    background-color: transparent;
+    color: black;
+    padding: 8px;
+    border: 3px black solid;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.btn-reset:hover{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 }

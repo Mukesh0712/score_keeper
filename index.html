@@ -10,6 +10,41 @@
 
     <script>
 
+        let team1 = 0 ;
+        let team2 = 0 ;
+
+        function incScoreA()
+        {
+            team1++;
+            document.getElementById("india").innerHTML = team1;
+        }
+
+        function decScoreA()
+        {
+            team1--;
+            document.getElementById("india").innerHTML = team1;
+        }
+
+        function incScoreB()
+        {
+            team2++;
+            document.getElementById("china").innerHTML = team2;
+        }
+
+        function decScoreB()
+        {
+            team2--;
+            document.getElementById("china").innerHTML = team2;
+        }
+
+        function reset()
+        {
+            team1 = 0 ;
+            team2 = 0 ;
+            document.getElementById("india").innerHTML = team1 ;
+            document.getElementById("china").innerHTML = team2 ;
+        }
+
     </script>
 
     <body>
@@ -18,41 +53,48 @@
             <h1 class="title">♟ ♟ &nbsp; <sup><u>icp</u></sup> Chess Score Keeper &nbsp; ♟ ♟</h1>
         </div>
 
-        <div class="team-card-conatiner">
+        <div class="team-card-conatiner-1">
 
-            <div class="team-card">
+            <div class="team-card-1">
 
-                <h2 class="team-card-title">INDIA</h2>
+                <h2 class="team-card-title-1">INDIA</h2>
 
-                <p class="team-card-score" id="india">
+                <p class="team-card-score-1" id="india">
                     0
                 </p>
 
                 <div class="score-card-button-conatiner">
-                    <span class="score-card-button" onClick="decScoreA()">👎</span>
-                    <span class="score-card-button" onClick="incScoreA()">👍</span>
+                    <span class="score-card-button-1" onClick="decScoreA()">➖</span>
+                    <span class="score-card-button-1" onClick="incScoreA()">➕</span>
                 </div>
 
             </div>
 
-            <div class="team-card">
+        </div>
+        
+        <div class="team-card-conatiner-2">
 
-                <h2 class="team-card-title">CHINA</h2>
+            <div class="team-card-2">
 
-                <p class="team-card-score" id="china">
+                <h2 class="team-card-title-2">CHINA</h2>
+
+                <p class="team-card-score-2" id="china">
                     0
                 </p>
 
                 <div class="score-card-button-conatiner">
-                    <span class="score-card-button" onClick="decScoreA()">👎</span>
-                    <span class="score-card-button" onClick="incScoreA()">👍</span>
+                    <span class="score-card-button-2" onClick="decScoreB()">➖</span>
+                    <span class="score-card-button-2" onClick="incScoreB()">➕</span>
                 </div>
 
             </div>
             
         </div>
-
         
+        <div class="btn-reset-container">
+            <button class="btn-reset" onClick="reset()">Reset</button>
+        </div>
+
     </body>
 
 </html>
