@@ -19,3 +19,42 @@ body{
     text-align: center;
     margin: 0;
 }
+
+.team-card-conatiner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-card{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(114, 113, 111);
+}
+
+.team-card-title{
+    text-align: center;
+}
+
+.team-card-score{
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+
+.score-card-button-conatiner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-card-button{
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px black ;
+    cursor: pointer;
+}
