@@ -1,0 +1,21 @@
+body{
+    background-image: url('./img/chess-board.jpeg');
+}
+
+.title-conatiner{
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
+
+.title{
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+}
